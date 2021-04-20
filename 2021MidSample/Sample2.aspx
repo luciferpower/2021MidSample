@@ -12,17 +12,14 @@
         <div>
             <h2>訂貨系統</h2>
         </div>
-        <br><asp:DropDownList ID="ddl_Area" runat="server" AutoPostBack="True">
-            <asp:ListItem>北區</asp:ListItem>
-            <asp:ListItem>中區</asp:ListItem>
+        <asp:DropDownList ID="ddl_Area" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_Area_SelectedIndexChanged">
+        <asp:ListItem>北區</asp:ListItem>
+        <asp:ListItem>中區</asp:ListItem>
         </asp:DropDownList><br/>
-        <asp:DropDownList ID="ddl_Place" runat="server" Height="61px">
+        <asp:DropDownList ID="ddl_Place" runat="server">
             <asp:ListItem>基隆</asp:ListItem>
             <asp:ListItem>台北</asp:ListItem>
             <asp:ListItem>新北</asp:ListItem>
-            <asp:ListItem>苗栗</asp:ListItem>
-            <asp:ListItem>台中</asp:ListItem>
-            <asp:ListItem>南投</asp:ListItem>
         </asp:DropDownList>
         <p>
             <asp:Label ID="Label1" runat="server" Text="姓名"></asp:Label>
@@ -35,9 +32,9 @@
         </asp:RadioButtonList>
         <asp:TextBox ID="tb_Des" runat="server" Visible="False" Width="400px"></asp:TextBox>
         <p>
-            <asp:Button ID="btn_Sub" runat="server" Text="送出" />
+            <asp:Button ID="btn_Sub" runat="server" Text="送出" OnClick="btn_Sub_Click" />
         </p>
-        <asp:Label ID="lb_Msg" runat="server" Text="Label" Visible="False"></asp:Label>
+        <asp:Label ID="lb_Msg" runat="server"></asp:Label>
     </form>
 </body>
 </html>

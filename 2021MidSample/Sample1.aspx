@@ -16,7 +16,7 @@
             </div>
         </div>
         <asp:Label ID="Label1" runat="server" Text="密碼"></asp:Label>
-        <asp:TextBox ID="tb_Pass" runat="server" Height="15px" OnTextChanged="tb_Pass_TextChanged" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="tb_Pass" runat="server" EnableTheming="True" EnableViewState="False" Height="15px" OnTextChanged="tb_Pass_TextChanged" Width="200px"></asp:TextBox>
         <p>
             <asp:Label ID="Label2" runat="server" Text="興趣"></asp:Label>
             <asp:CheckBox ID="CheckBox1" runat="server" Text="看書" />
