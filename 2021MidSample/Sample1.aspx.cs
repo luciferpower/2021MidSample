@@ -10,5 +10,10 @@ namespace _2021MidSample {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+
+        protected void tb_Pass_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
